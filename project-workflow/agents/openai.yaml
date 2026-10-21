@@ -1,0 +1,4 @@
+interface:
+  display_name: "项目协作工作流"
+  short_description: "整理口语需求并复用文档缓存，按竞赛或科研场景推进项目与必要验证"
+  default_prompt: "使用 $project-workflow，根据我的自然表达提取任务信息，沿用当前项目约定，在已明确的范围内推进工作。"

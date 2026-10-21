@@ -1,0 +1,3 @@
+-r ../scripts/requirements.txt
+reportlab>=4.0
+

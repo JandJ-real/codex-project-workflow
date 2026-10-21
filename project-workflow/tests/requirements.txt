@@ -1,3 +1,5 @@
 -r ../scripts/requirements.txt
 reportlab>=4.0
+openpyxl>=3.1
+python-pptx>=1.0
 

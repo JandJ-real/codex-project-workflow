@@ -1,0 +1,57 @@
+name: Validate skill
+on:
+  push:
+    paths: ['project-workflow/**', 'evals/**', '.github/workflows/validate.yml']
+  pull_request:
+    paths: ['project-workflow/**', 'evals/**', '.github/workflows/validate.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  deterministic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r project-workflow/tests/requirements.txt
+      - run: python -m unittest discover -s project-workflow/tests -v
+  model-regression:
+    if: vars.MODEL_REGRESSION_ENABLED == 'true' && github.event_name != 'pull_request'
+    needs: deterministic
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Require configured model credentials
+        run: test -n "$OPENAI_API_KEY"
+      - run: python -m pip install -r project-workflow/tests/requirements.txt
+      - run: npm install -g @openai/codex
+      - name: Extract frozen stable baseline
+        run: |
+          mkdir -p .baseline
+          git archive dfe20bfc69da9fee0b15b81bb707dd28e1f7dcc4 project-workflow | tar -x -C .baseline
+      - run: python evals/run_eval.py prepare --baseline .baseline/project-workflow --output eval-results --repeats 1
+      - run: python evals/run_eval.py run --output eval-results
+      - run: python evals/run_eval.py grade --output eval-results
+      - name: Enforce candidate correctness
+        run: python -c "import json; r=json.load(open('eval-results/graded-results.json')); b=[x for x in r if x['group']=='B']; assert len(b)==11 and all(x['success'] for x in b), 'Candidate model regression failed'"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: model-regression
+          path: |
+            eval-results/results.csv
+            eval-results/paired-results.json
+            eval-results/network-events.json

@@ -1,0 +1,98 @@
+[
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:35:21.527279Z",
+    "category": "transport_fallback_or_error",
+    "is_retry": false,
+    "run_id": "T4-R1-B",
+    "association": "time_window"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:35:21.528175Z",
+    "category": "connection_error",
+    "is_retry": false,
+    "run_id": "T4-R1-B",
+    "association": "time_window"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:46:19.494081Z",
+    "category": "sampling_retry",
+    "is_retry": true,
+    "run_id": "D2-R2-B",
+    "association": "turn_id"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:46:24.802217Z",
+    "category": "transport_fallback_or_error",
+    "is_retry": false,
+    "run_id": "D2-R2-B",
+    "association": "time_window"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:46:24.802559Z",
+    "category": "sampling_retry",
+    "is_retry": true,
+    "run_id": "D2-R2-B",
+    "association": "turn_id"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:46:30.227516Z",
+    "category": "transport_fallback_or_error",
+    "is_retry": false,
+    "run_id": "D2-R2-B",
+    "association": "time_window"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:46:30.227843Z",
+    "category": "sampling_retry",
+    "is_retry": true,
+    "run_id": "D2-R2-B",
+    "association": "turn_id"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:46:36.032202Z",
+    "category": "transport_fallback_or_error",
+    "is_retry": false,
+    "run_id": "D2-R2-B",
+    "association": "time_window"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:46:36.032430Z",
+    "category": "sampling_retry",
+    "is_retry": true,
+    "run_id": "D2-R2-B",
+    "association": "turn_id"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:46:42.762711Z",
+    "category": "transport_fallback_or_error",
+    "is_retry": false,
+    "run_id": "D2-R2-B",
+    "association": "time_window"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:46:42.763044Z",
+    "category": "sampling_retry",
+    "is_retry": true,
+    "run_id": "D2-R2-B",
+    "association": "turn_id"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:46:50.693639Z",
+    "category": "transport_fallback_or_error",
+    "is_retry": false,
+    "run_id": "D2-R2-B",
+    "association": "time_window"
+  }
+]

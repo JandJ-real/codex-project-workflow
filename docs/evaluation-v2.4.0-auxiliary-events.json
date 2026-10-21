@@ -1,0 +1,1822 @@
+[
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:06:53.035514Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:06:53.037760Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:06:53.037829Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:06:53.037852Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:06:53.037926Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:10:09.266866Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:10:09.268330Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:10:09.268371Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:10:09.268490Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:10:09.268563Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:13:32.673186Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:13:32.675673Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:13:32.675755Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:13:32.675781Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:13:32.675868Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:14:34.491424Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:14:34.494399Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:14:34.494489Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:14:34.494519Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:14:34.494612Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:18:06.148658Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:18:06.150260Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:18:06.150298Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:18:06.150309Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:18:06.150365Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:19:21.093276Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:19:21.095536Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:19:21.095606Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:19:21.095627Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:19:21.095702Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:21:45.938192Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T1-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:21:45.939647Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T1-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:21:45.939716Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T1-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:21:45.939741Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T1-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:21:45.939834Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T1-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:22:40.698824Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T2-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:22:40.700213Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T2-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:22:40.700254Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T2-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:22:40.700264Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T2-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:22:40.700314Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T2-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:29:36.655252Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T3-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:29:36.656873Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T3-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:29:36.656945Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T3-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:29:36.656965Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T3-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:29:36.657046Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T3-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:32:08.370320Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T4-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:32:08.372649Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T4-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:32:08.372708Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T4-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:32:08.372728Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T4-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:32:08.372801Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T4-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:38:08.481600Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:38:08.481827Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:38:08.481956Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:38:08.482037Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:38:08.482207Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:38:08.482281Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:38:08.482424Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:38:08.482690Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:38:08.482871Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-21T12:38:08.483059Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:08:04.735016Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:08:04.736553Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:08:04.736599Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:08:04.736614Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:08:04.736673Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:11:17.050934Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:11:17.053356Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:11:17.053421Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:11:17.053441Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:11:17.053518Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:12:10.559556Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:12:10.563589Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:12:10.563680Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:12:10.563709Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:12:10.563798Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:15:44.090147Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:15:44.091889Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:15:44.091961Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:15:44.091985Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:15:44.092072Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:17:04.691096Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:17:04.692998Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:17:04.693108Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:17:04.693136Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:17:04.693228Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:20:12.601789Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:20:12.603907Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:20:12.603981Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:20:12.604003Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:20:12.604078Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:20:53.879006Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T1-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:20:53.880855Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T1-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:20:53.880919Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T1-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:20:53.880930Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T1-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:20:53.880988Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T1-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:25:09.778178Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T2-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:25:09.780541Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T2-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:25:09.780720Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T2-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:25:09.780746Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T2-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:25:09.780825Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T2-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:27:30.420549Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T3-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:27:30.422664Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T3-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:27:30.422739Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T3-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:27:30.422764Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T3-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:27:30.422852Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T3-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:35:21.443171Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "T4-R1-B"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:38:08.540544Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:38:08.540723Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:38:08.540761Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:38:08.540889Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:38:08.541186Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:38:08.541415Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:38:08.542534Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:38:08.542669Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:38:08.542849Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-21T12:38:08.542930Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:39:18.276152Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:39:18.278230Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:39:18.278287Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:39:18.278308Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:39:18.278376Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:48:13.130899Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:48:13.132320Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:48:13.132355Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:48:13.132365Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:48:13.132423Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:49:11.500434Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:49:11.502577Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:49:11.502634Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:49:11.502653Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:49:11.502720Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:52:36.465482Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:52:36.466865Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:52:36.466920Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:52:36.466966Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:52:36.467022Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:53:52.969583Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:53:52.971245Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:53:52.971286Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:53:52.971297Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:53:52.971350Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:56:37.952360Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:56:37.954051Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:56:37.954089Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:56:37.954100Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:56:37.954160Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:57:21.695257Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:57:21.695534Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:57:21.696189Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:57:21.696381Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:57:21.696438Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-21T12:57:21.696741Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:38:19.926065Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:38:19.927379Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:38:19.927429Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:38:19.927441Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:38:19.927509Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:47:15.587790Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:47:15.590061Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:47:15.590137Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:47:15.590159Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:47:15.590245Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:50:42.777207Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:50:42.778490Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:50:42.778529Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:50:42.778540Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:50:42.778594Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:51:38.689152Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:51:38.690697Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:51:38.690737Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:51:38.690747Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:51:38.690844Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:55:03.664247Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:55:03.666223Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:55:03.666287Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:55:03.666311Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:55:03.666397Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:55:47.964681Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:55:47.965712Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:55:47.965751Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:55:47.965762Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:55:47.965813Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:57:21.750574Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:57:21.750957Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:57:21.751102Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:57:21.751272Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:57:21.751545Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-21T12:57:21.751683Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T12:57:30.810729Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T12:57:30.812756Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T12:57:30.812827Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T12:57:30.812850Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T12:57:30.812946Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:00:54.096731Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:00:54.098812Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:00:54.098849Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:00:54.098861Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:00:54.098913Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:03:51.591869Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:03:51.593633Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:03:51.593668Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:03:51.593679Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:03:51.593729Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:05:10.313520Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:05:10.314998Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:05:10.315049Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:05:10.315060Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:05:10.315109Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:09:23.868350Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:09:23.869991Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:09:23.870039Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:09:23.870054Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:09:23.870153Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:10:22.620380Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:10:22.621571Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:10:22.621608Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:10:22.621619Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:10:22.621674Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:12:12.997799Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:12:12.998042Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:12:12.998043Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:12:12.998590Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:12:12.998809Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-21T13:12:12.999287Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T12:58:50.190791Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T12:58:50.192164Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T12:58:50.192207Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T12:58:50.192219Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T12:58:50.192282Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D1-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:02:01.148111Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:02:01.149234Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:02:01.149269Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:02:01.149280Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:02:01.149332Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D3-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:03:00.952244Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:03:00.953467Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:03:00.953534Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:03:00.953547Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:03:00.953608Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D4-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:06:37.300009Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:06:37.302060Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:06:37.302122Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:06:37.302158Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:06:37.302235Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D5-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:07:50.238469Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:07:50.239542Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:07:50.239578Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:07:50.239590Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:07:50.239647Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D6-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:11:22.169057Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:11:22.170466Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:11:22.170503Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:11:22.170513Z",
+    "target": "codex_rmcp_client::oauth::refresh_transaction",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:11:22.170560Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": "D7-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:12:13.064194Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:12:13.064504Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:12:13.064684Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:12:13.066476Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:12:13.066478Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-21T13:12:13.067050Z",
+    "target": "codex_mcp::rmcp_client",
+    "category": "auxiliary_connection_or_auth",
+    "run_id": null
+  }
+]

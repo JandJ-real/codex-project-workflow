@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Project workflow task contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["goal", "mode", "workflow", "constraints", "acceptance", "sources", "assumptions", "unknowns", "research"],
+  "properties": {
+    "goal": {"type": "string", "minLength": 1},
+    "mode": {"enum": ["execute", "discuss", "options", "prompt_only"]},
+    "workflow": {"enum": ["direct", "start", "execute", "resume", "research_targeted", "research_review", "prompt_only", "close", "redirect"]},
+    "constraints": {"type": "array", "items": {"type": "string"}},
+    "acceptance": {"type": "array", "items": {"type": "string"}},
+    "sources": {"type": "array", "items": {"type": "string"}},
+    "assumptions": {"type": "array", "items": {"type": "string"}},
+    "unknowns": {"type": "array", "items": {"type": "string"}},
+    "research": {"type": "object", "additionalProperties": false,
+      "required": ["needed", "papers", "open_source", "common_practice", "limits"],
+      "properties": {
+        "needed": {"type": "boolean"},
+        "papers": {"type": "array", "items": {"type": "string"}},
+        "open_source": {"type": "array", "items": {"type": "string"}},
+        "common_practice": {"type": "array", "items": {"type": "string"}},
+        "limits": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  }
+}

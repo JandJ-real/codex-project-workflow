@@ -1,0 +1,227 @@
+[
+  {
+    "stage": "D1",
+    "repeat": 1,
+    "category": "cold",
+    "both_success": true,
+    "observed_network_clean": true,
+    "uncached_ratio": 0.6452964146254881,
+    "elapsed_ratio": 0.8584456671251719
+  },
+  {
+    "stage": "D2",
+    "repeat": 1,
+    "category": "same_thread",
+    "both_success": true,
+    "observed_network_clean": true,
+    "uncached_ratio": 0.4946518456375839,
+    "elapsed_ratio": 0.8873281693214052
+  },
+  {
+    "stage": "D3",
+    "repeat": 1,
+    "category": "fresh_reuse",
+    "both_success": true,
+    "observed_network_clean": true,
+    "uncached_ratio": 0.5901711664019763,
+    "elapsed_ratio": 0.815038623543245
+  },
+  {
+    "stage": "D4",
+    "repeat": 1,
+    "category": "hidden_update",
+    "both_success": false,
+    "observed_network_clean": true,
+    "uncached_ratio": 1.2848593350383632,
+    "elapsed_ratio": 1.3354246789648656
+  },
+  {
+    "stage": "D5",
+    "repeat": 1,
+    "category": "multi_cold",
+    "both_success": true,
+    "observed_network_clean": true,
+    "uncached_ratio": 1.1854313619099295,
+    "elapsed_ratio": 1.155917455464754
+  },
+  {
+    "stage": "D6",
+    "repeat": 1,
+    "category": "multi_reuse",
+    "both_success": true,
+    "observed_network_clean": true,
+    "uncached_ratio": 0.8565523858729749,
+    "elapsed_ratio": 0.8726953820611352
+  },
+  {
+    "stage": "D7",
+    "repeat": 1,
+    "category": "quality_gap",
+    "both_success": true,
+    "observed_network_clean": true,
+    "uncached_ratio": 0.9765979095365831,
+    "elapsed_ratio": 0.8049691616242193
+  },
+  {
+    "stage": "T1",
+    "repeat": 1,
+    "category": "routing_direct",
+    "both_success": false,
+    "observed_network_clean": true,
+    "uncached_ratio": 0.8629428823603581,
+    "elapsed_ratio": 0.9988759335467154
+  },
+  {
+    "stage": "T2",
+    "repeat": 1,
+    "category": "routing_prompt_only",
+    "both_success": false,
+    "observed_network_clean": true,
+    "uncached_ratio": 1.453591925588759,
+    "elapsed_ratio": 0.9418099962258046
+  },
+  {
+    "stage": "T3",
+    "repeat": 1,
+    "category": "routing_competition",
+    "both_success": false,
+    "observed_network_clean": true,
+    "uncached_ratio": 0.3093460734547626,
+    "elapsed_ratio": 0.8271390966665798
+  },
+  {
+    "stage": "T4",
+    "repeat": 1,
+    "category": "routing_review",
+    "both_success": false,
+    "observed_network_clean": false,
+    "uncached_ratio": 1.1166652063436433,
+    "elapsed_ratio": 0.8907444230410737
+  },
+  {
+    "stage": "D1",
+    "repeat": 2,
+    "category": "cold",
+    "both_success": true,
+    "observed_network_clean": true,
+    "uncached_ratio": 0.9262944092536491,
+    "elapsed_ratio": 0.913067013099491
+  },
+  {
+    "stage": "D2",
+    "repeat": 2,
+    "category": "same_thread",
+    "both_success": true,
+    "observed_network_clean": false,
+    "uncached_ratio": 1.1956469744080362,
+    "elapsed_ratio": 9.912978461054124
+  },
+  {
+    "stage": "D3",
+    "repeat": 2,
+    "category": "fresh_reuse",
+    "both_success": true,
+    "observed_network_clean": true,
+    "uncached_ratio": 1.0721972373915838,
+    "elapsed_ratio": 1.0064316464669167
+  },
+  {
+    "stage": "D4",
+    "repeat": 2,
+    "category": "hidden_update",
+    "both_success": true,
+    "observed_network_clean": true,
+    "uncached_ratio": 0.8723692836313494,
+    "elapsed_ratio": 0.6329470821078702
+  },
+  {
+    "stage": "D5",
+    "repeat": 2,
+    "category": "multi_cold",
+    "both_success": true,
+    "observed_network_clean": true,
+    "uncached_ratio": 2.0706105063890203,
+    "elapsed_ratio": 0.7563300291851812
+  },
+  {
+    "stage": "D6",
+    "repeat": 2,
+    "category": "multi_reuse",
+    "both_success": true,
+    "observed_network_clean": true,
+    "uncached_ratio": 2.4792972362067194,
+    "elapsed_ratio": 0.7091462057710852
+  },
+  {
+    "stage": "D7",
+    "repeat": 2,
+    "category": "quality_gap",
+    "both_success": true,
+    "observed_network_clean": true,
+    "uncached_ratio": 0.9612369337979094,
+    "elapsed_ratio": 1.0347423518862218
+  },
+  {
+    "stage": "D1",
+    "repeat": 3,
+    "category": "cold",
+    "both_success": true,
+    "observed_network_clean": true,
+    "uncached_ratio": 0.6451765390349442,
+    "elapsed_ratio": 0.9508626153087812
+  },
+  {
+    "stage": "D2",
+    "repeat": 3,
+    "category": "same_thread",
+    "both_success": true,
+    "observed_network_clean": true,
+    "uncached_ratio": 0.32608523133084677,
+    "elapsed_ratio": 1.052162500381528
+  },
+  {
+    "stage": "D3",
+    "repeat": 3,
+    "category": "fresh_reuse",
+    "both_success": true,
+    "observed_network_clean": true,
+    "uncached_ratio": 0.7887027491408934,
+    "elapsed_ratio": 0.8991181027291145
+  },
+  {
+    "stage": "D4",
+    "repeat": 3,
+    "category": "hidden_update",
+    "both_success": false,
+    "observed_network_clean": true,
+    "uncached_ratio": 0.972806261192545,
+    "elapsed_ratio": 0.6372953718349343
+  },
+  {
+    "stage": "D5",
+    "repeat": 3,
+    "category": "multi_cold",
+    "both_success": true,
+    "observed_network_clean": true,
+    "uncached_ratio": 0.3119004814247276,
+    "elapsed_ratio": 0.7928895441143116
+  },
+  {
+    "stage": "D6",
+    "repeat": 3,
+    "category": "multi_reuse",
+    "both_success": true,
+    "observed_network_clean": true,
+    "uncached_ratio": 1.1178697627460878,
+    "elapsed_ratio": 1.4792186999679795
+  },
+  {
+    "stage": "D7",
+    "repeat": 3,
+    "category": "quality_gap",
+    "both_success": true,
+    "observed_network_clean": true,
+    "uncached_ratio": 0.550011592858799,
+    "elapsed_ratio": 0.9349036111865328
+  }
+]

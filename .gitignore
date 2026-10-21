@@ -4,4 +4,7 @@ __pycache__/
 .DS_Store
 Thumbs.db
 .codex-cache/
+.ai-cache/
+work/
+eval-results/
 

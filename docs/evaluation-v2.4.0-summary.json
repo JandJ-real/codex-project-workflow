@@ -1,0 +1,183 @@
+{
+  "versions": {
+    "A": "2.2.1",
+    "B": "2.4.0"
+  },
+  "complete_tasks": 50,
+  "planned_tasks": 50,
+  "candidate_model_gate_passed": true,
+  "aggregates": {
+    "全部": {
+      "A": {
+        "tasks": 25,
+        "successes": 19,
+        "success_rate": 0.76,
+        "input_tokens": 4795896,
+        "cached_input_tokens": 4104960,
+        "uncached_input_tokens": 690936,
+        "output_tokens": 53836,
+        "total_tokens": 4849732,
+        "elapsed_seconds": 1880.199,
+        "shell_commands": 185,
+        "command_output_chars": 753375,
+        "source_hash_reads": 0,
+        "source_reads_other_than_hash": 41,
+        "retry_events": 0,
+        "network_events": 0,
+        "median_elapsed_seconds": 67.187
+      },
+      "B": {
+        "tasks": 25,
+        "successes": 25,
+        "success_rate": 1.0,
+        "input_tokens": 4418736,
+        "cached_input_tokens": 3827072,
+        "uncached_input_tokens": 591664,
+        "output_tokens": 48685,
+        "total_tokens": 4467421,
+        "elapsed_seconds": 2044.579,
+        "shell_commands": 182,
+        "command_output_chars": 548101,
+        "source_hash_reads": 76,
+        "source_reads_other_than_hash": 32,
+        "retry_events": 5,
+        "network_events": 12,
+        "median_elapsed_seconds": 59.038
+      }
+    },
+    "资料任务": {
+      "A": {
+        "tasks": 21,
+        "successes": 19,
+        "success_rate": 0.9047619047619048,
+        "input_tokens": 4224365,
+        "cached_input_tokens": 3640448,
+        "uncached_input_tokens": 583917,
+        "output_tokens": 38209,
+        "total_tokens": 4262574,
+        "elapsed_seconds": 1332.743,
+        "shell_commands": 165,
+        "command_output_chars": 729977,
+        "source_hash_reads": 0,
+        "source_reads_other_than_hash": 41,
+        "retry_events": 0,
+        "network_events": 0,
+        "median_elapsed_seconds": 67.128
+      },
+      "B": {
+        "tasks": 21,
+        "successes": 21,
+        "success_rate": 1.0,
+        "input_tokens": 3754391,
+        "cached_input_tokens": 3250560,
+        "uncached_input_tokens": 503831,
+        "output_tokens": 31783,
+        "total_tokens": 3786174,
+        "elapsed_seconds": 1553.445,
+        "shell_commands": 150,
+        "command_output_chars": 518524,
+        "source_hash_reads": 76,
+        "source_reads_other_than_hash": 32,
+        "retry_events": 5,
+        "network_events": 10,
+        "median_elapsed_seconds": 58.211
+      }
+    },
+    "任务与路由探针": {
+      "A": {
+        "tasks": 4,
+        "successes": 0,
+        "success_rate": 0.0,
+        "input_tokens": 571531,
+        "cached_input_tokens": 464512,
+        "uncached_input_tokens": 107019,
+        "output_tokens": 15627,
+        "total_tokens": 587158,
+        "elapsed_seconds": 547.456,
+        "shell_commands": 20,
+        "command_output_chars": 23398,
+        "source_hash_reads": 0,
+        "source_reads_other_than_hash": 0,
+        "retry_events": 0,
+        "network_events": 0,
+        "median_elapsed_seconds": 150.926
+      },
+      "B": {
+        "tasks": 4,
+        "successes": 4,
+        "success_rate": 1.0,
+        "input_tokens": 664345,
+        "cached_input_tokens": 576512,
+        "uncached_input_tokens": 87833,
+        "output_tokens": 16902,
+        "total_tokens": 681247,
+        "elapsed_seconds": 491.134,
+        "shell_commands": 32,
+        "command_output_chars": 29577,
+        "source_hash_reads": 0,
+        "source_reads_other_than_hash": 0,
+        "retry_events": 0,
+        "network_events": 2,
+        "median_elapsed_seconds": 133.344
+      }
+    }
+  },
+  "pairs": {
+    "全部配对": {
+      "pairs": 25,
+      "median_uncached_ratio": 0.9262944092536491,
+      "median_elapsed_ratio": 0.8991181027291145,
+      "uncached_wins": 16,
+      "elapsed_wins": 18
+    },
+    "正确且未观测模型传输异常配对": {
+      "pairs": 18,
+      "median_uncached_ratio": 0.8644608347521621,
+      "median_elapsed_ratio": 0.8932231360252598,
+      "uncached_wins": 13,
+      "elapsed_wins": 13
+    },
+    "复用场景正确且未观测模型传输异常配对": {
+      "pairs": 8,
+      "median_uncached_ratio": 0.8226275675069341,
+      "median_elapsed_ratio": 0.8932231360252598,
+      "uncached_wins": 5,
+      "elapsed_wins": 5
+    },
+    "复用场景同时排除辅助连接异常配对": {
+      "pairs": 2,
+      "median_uncached_ratio": 0.41036853848421534,
+      "median_elapsed_ratio": 0.9697453348514666,
+      "uncached_wins": 2,
+      "elapsed_wins": 1
+    }
+  },
+  "unassigned_network_events": 0,
+  "auxiliary_connection_or_auth_events": 260,
+  "auxiliary_affected_tasks": 44,
+  "observed_command_patterns": {
+    "A": {
+      "query_commands": 0,
+      "full_cache_dump_commands": 2,
+      "manual_hash_commands": 0,
+      "format_skill_output_chars": 335045
+    },
+    "B": {
+      "query_commands": 21,
+      "full_cache_dump_commands": 9,
+      "manual_hash_commands": 1,
+      "format_skill_output_chars": 147580
+    }
+  },
+  "release_checks": {
+    "checked_utc": "2026-10-21T13:06:05.333401+00:00",
+    "deterministic_tests": 29,
+    "deterministic_passed": true,
+    "deterministic_elapsed_seconds": 9.595,
+    "skill_structure_passed": true,
+    "diff_check_passed": true,
+    "frozen_candidate_unchanged": true,
+    "frozen_candidate_file_count": 26
+  },
+  "candidate_release_gate_passed": true
+}

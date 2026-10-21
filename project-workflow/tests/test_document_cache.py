@@ -1,5 +1,6 @@
 """Behavior tests for the document-cache CLI; fixtures stay in task work/."""
 import json
+import hashlib
 import os
 import re
 from pathlib import Path
@@ -185,7 +186,8 @@ class DocumentCacheTests(unittest.TestCase):
         md.write_text(legacy, encoding="utf-8")
         record = json.loads(meta.read_text(encoding="utf-8"))
         record.pop("structure", None)
-        record["output"] = {"size": md.stat().st_size, "mtime_ns": md.stat().st_mtime_ns}
+        record["output"] = {"size": md.stat().st_size, "mtime_ns": md.stat().st_mtime_ns,
+                            "sha256": hashlib.sha256(md.read_bytes()).hexdigest()}
         meta.write_text(json.dumps(record), encoding="utf-8")
         stamps = (md.stat().st_mtime_ns, meta.stat().st_mtime_ns)
         second = self.call(source)

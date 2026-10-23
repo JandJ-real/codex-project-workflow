@@ -2,7 +2,7 @@
 name: project-workflow
 description: "将口语化项目需求整理为可执行任务，以轻量状态、阶段范围和验证证据推进工作。用于初始化项目协作规则、继续已有阶段、调研优化或生成任务提示词；单纯知识问答不启用完整项目流程。"
 metadata:
-  version: "2.4.0"
+  version: "2.5.4"
 ---
 
 # 项目协作工作流
@@ -15,7 +15,7 @@ metadata:
 - 保留“执行／讨论／选方案／只写提示词”的边界。普通执行直接推进，不先输出长提示词、不让用户复制回来、不另调模型改写。复杂任务用一两句话说明理解即可。
 - 复用已知信息；缺口会改变目标、路线、成本或验收时才集中询问，并继续独立的已授权工作。普通实现细节自行判断，不重复索取已有授权。
 - 用户需要保存、复制或迁移提示词时，交付独立可用的完整提示词；只要求提示词时不执行其内容。提示词保留必要约束与未知项，不写“同上”或编造预算。
-- 复杂任务、交接或用户要求可审计时，按 [task-contract.md](references/task-contract.md) 保存简短的结构化任务约定；普通单步请求不写中间文件，不额外调用模型。
+- 复杂任务、交接或用户要求可审计 JSON 时，先读 [task-contract.md](references/task-contract.md)，使用 schema 的固定枚举（如 `mode: execute`、`workflow: direct`），不能翻译枚举或用说明替代；普通单步请求不写中间文件，不额外调用模型。
 
 ## 按需要选择流程
 
@@ -31,6 +31,10 @@ metadata:
 | 阶段收尾或路线调整 | [close.md](references/close.md)、[redirect.md](references/redirect.md)，按当前需要选一份 |
 
 首次处理需专用工具读取的复杂文件时读 [document-cache.md](references/document-cache.md)，之后复用其接口。PDF、Word、表格、幻灯片、Notebook、图像、媒体及归档等首次读取后都保存适合检索的表示与定位；已有易读文本直接使用。需要关键检查时读 [quality-gates.md](references/quality-gates.md)；调整模板时读 [prompt-design.md](references/prompt-design.md)。不因每次调用而重读参考。
+
+资料问答的默认入口是 `scripts/document_query.py <源文件...> --query "当前问题及必要的对译关键词"`，一次完成内容校验、必要转换和紧凑证据返回。已知路径直接调用；不先枚举缓存、打印全文、另跑 cache 或手写哈希。多问题可用 `--batch` 共享一次校验。依据返回片段、定位和质量状态作答；只在相关证据缺失、被截断或有提取缺口时扩查该处。写入结果后检查产物结构即可，已有效的来源与引用不再重复全文读取或哈希。
+
+新会话的“上面／那些材料”优先用 `--sources-from <相关JSON产物>` 一次恢复其 `sources[].file` 并检索，不先把旧答案全文读入上下文；用户明确数量时加 `--expected-sources N`。不按目录凑文件数或猜来源。非结构化记录只恢复必要来源，仍无法唯一确定时再问。
 
 ## 状态与路线
 

@@ -4,10 +4,12 @@ import json
 import os
 from pathlib import Path
 import queue
+import re
 import shutil
 import subprocess
 import threading
 import time
+import tomllib
 
 
 def dump(path,value):
@@ -17,6 +19,34 @@ def dump(path,value):
 
 def now():
     return datetime.now(timezone.utc).isoformat()
+
+
+def read_io_records(path,offset=0):
+    # Offsets count physical lines; filter blanks only after slicing. Nonempty
+    # malformed records still fail instead of silently becoming zero I/O.
+    return [json.loads(line) for line in Path(path).read_text(encoding='utf-8').splitlines()[offset:] if line.strip()]
+
+
+def mcp_isolation(workspace):
+    """Discover names only; override the child process, never rewrite user config."""
+    home=Path(os.environ.get('CODEX_HOME',Path.home()/'.codex'))
+    configs=[home/'config.toml']+[p/'.codex/config.toml' for p in [Path(workspace),*Path(workspace).parents]]
+    names=set();plugins=set()
+    for path in configs:
+        if path.is_file():
+            config=tomllib.loads(path.read_text(encoding='utf-8'))
+            names.update(config.get('mcp_servers',{}))
+            plugins.update(p for p in config.get('plugins',{}) if p.split('@')[0] in
+                           {'codex-app-tools','code-review','unified-computer-use','browser','computer-use'})
+    flags=[]
+    for name in sorted(names):
+        if not re.fullmatch(r'[A-Za-z0-9_-]+',name):
+            raise ValueError('MCP name cannot be represented by safe dotted CLI overrides; use an isolated evaluation profile.')
+        flags+=['-c','mcp_servers.'+name+'.enabled=false']
+    for plugin in sorted(plugins):
+        if '.' in plugin:raise ValueError('Plugin id cannot be represented by dotted CLI overrides.')
+        flags+=['-c','plugins.'+plugin+'.enabled=false']
+    return sorted(names),sorted(plugins),flags
 
 
 class Server:
@@ -30,6 +60,9 @@ class Server:
                  '-c','web_search="disabled"','-c','approval_policy="never"',
                  '-c','sandbox_mode="danger-full-access"','-c','shell_environment_policy.inherit="all"',
                  '--disable','apps','--disable','multi_agent']
+        disabled_mcp,disabled_plugins,overrides=mcp_isolation(self.ws)
+        self.disabled_mcp=disabled_mcp;self.disabled_plugins=disabled_plugins
+        command+=overrides
         if disabled_skill:
             command += ['-c','skills.config=[{path='+json.dumps(str(Path(disabled_skill).as_posix()),ensure_ascii=False)+',enabled=false}]']
         env=os.environ.copy()
@@ -44,8 +77,30 @@ class Server:
         self.rpc('initialize',{'clientInfo':{'name':'project_workflow_eval','title':'Project Workflow Eval','version':'0.5.0'},
                                'capabilities':{'experimentalApi':True}})
         self.send({'method':'initialized','params':{}})
+        config=self.rpc('config/read',{'includeLayers':False})['config']
+        for name in disabled_mcp:
+            if config.get('mcp_servers',{}).get(name,{}).get('enabled') is not False:
+                self.close();raise RuntimeError('MCP override was not applied: '+name)
+        for plugin in disabled_plugins:
+            if config.get('plugins',{}).get(plugin,{}).get('enabled') is not False:
+                self.close();raise RuntimeError('Plugin isolation override was not applied: '+plugin)
+        self.mcp_status=self.rpc('mcpServerStatus/list',{}).get('data',[])
+        active=self.active_mcp(self.mcp_status)
+        if active:
+            dump(self.root/f'server-{arm}-isolation-failure.json',[
+                {'name':s.get('name'),'runtimeStatus':s.get('runtimeStatus'),'pluginId':s.get('pluginId'),
+                 'tool_count':len(s.get('tools',{}))} for s in self.mcp_status])
+            self.close()
+            raise RuntimeError('MCP isolation failed: active servers remain; no model task started.')
         dump(self.root/f'server-{arm}-config.json',{'model':model,'effort':effort,'startup_seconds':time.perf_counter()-start,
-            'workspace':str(self.ws),'command':command,'network_tools':'disabled','response_replay_cache':False})
+            'workspace':str(self.ws),'command':command,'network_tools':'disabled','response_replay_cache':False,
+            'mcp_disabled_names':disabled_mcp,'mcp_disabled_plugins':disabled_plugins,'active_mcp_servers':len(active),
+            'configured_inventory_entries':len(self.mcp_status),'effective_overrides_verified':True})
+
+    def active_mcp(self,statuses):
+        # Inventory can include disabled configured servers; they are not live connections.
+        return [s for s in statuses if s.get('name') not in self.disabled_mcp and
+                s.get('pluginId') not in self.disabled_plugins]
 
     def _reader(self):
         for line in self.process.stdout:
@@ -88,6 +143,8 @@ class Server:
             response=self.rpc('thread/start',{'cwd':str(self.ws),'model':self.model,'approvalPolicy':'never',
                                                'sandbox':'danger-full-access','ephemeral':True})
             thread=response['thread']['id'];dump(directory/'thread-start.json',response)
+            active=self.active_mcp(self.rpc('mcpServerStatus/list',{'threadId':thread}).get('data',[]))
+            if active:raise RuntimeError('MCP isolation failed after thread startup.')
         before=dict(self.usage.get(thread,{}))
         turn=self.rpc('turn/start',{'threadId':thread,'effort':self.effort,'input':[{'type':'text','text':stage['question']}]})
         turn_id=turn['turn']['id'];status='timeout';heartbeat=0
@@ -107,7 +164,7 @@ class Server:
         (directory/'trace.jsonl').write_text(''.join(json.dumps(e,ensure_ascii=False)+'\n' for e in events),encoding='utf-8')
         after=self.usage.get(thread)
         delta={k:v-before.get(k,0) for k,v in after.items()} if after else None
-        io=[json.loads(s) for s in self.io_path.read_text(encoding='utf-8').splitlines()[io_offset:]]
+        io=read_io_records(self.io_path,io_offset)
         dump(directory/'io-events.json',io)
         items=[e['params']['item'] for e in events if e.get('method')=='item/completed']
         commands=[i for i in items if i['type']=='commandExecution']

@@ -19,6 +19,20 @@ def load(path):
     return json.loads(Path(path).read_text(encoding='utf-8'))
 
 
+def safe_ratio(numerator,denominator):
+    return numerator/denominator if numerator is not None and denominator is not None and denominator!=0 else None
+
+
+def remote_turn_seconds(events,turn_id):
+    for event in reversed(events):
+        if event.get('method')=='turn/completed':
+            turn=event.get('params',{}).get('turn',{})
+            if turn.get('id')==turn_id:
+                value=turn.get('durationMs')
+                return value/1000 if isinstance(value,(int,float)) else None
+    return None
+
+
 def prepare(args):
     root=args.output.resolve()
     if (root/'protocol.json').exists():raise ValueError('Use a new output directory; never overwrite a prior run.')
@@ -32,8 +46,9 @@ def prepare(args):
     schedule=[];suites={}
     for repeat in range(1,args.repeats+1):
         fixture=root/'fixtures'/f'R{repeat}'
-        suite=make_materials(fixture,repeat);suites[str(repeat)]=suite
+        suite=make_materials(fixture,repeat+args.material_offset);suites[str(repeat)]=suite
         stages=[s for s in suite['stages'] if repeat==1 or not s['id'].startswith('T')]
+        if args.stages:stages=[s for s in stages if s['id'] in args.stages]
         for group in ['A','B']:
             workspace=root/'workspaces'/f'R{repeat}-{group}'
             shutil.copytree(fixture,workspace)
@@ -46,10 +61,15 @@ def prepare(args):
                 'For routing probes, evidence-pack.md is the complete permitted offline evidence boundary. '
                 'Do not read other evaluation workspaces, grading or expected answers.\n',encoding='utf-8')
         for index,stage in enumerate(stages):
-            for group in (['A','B'] if (repeat+index)%2 else ['B','A']):
+            for group in (['A','B'] if (repeat+index+args.order_offset)%2 else ['B','A']):
                 schedule.append({'id':f'{stage["id"]}-R{repeat}-{group}','repeat':repeat,'group':group,'stage':stage['id']})
     dump(root/'protocol.json',{'versions':versions,'model':args.model,'effort':args.effort,
         'repeats':args.repeats,'suites':suites,'schedule':schedule,
+        'material_offset':args.material_offset,
+        'selected_stages':args.stages,'order_offset':args.order_offset,
+        'strict_performance':args.strict_performance,
+        'mcp_isolation':'Child-process overrides verified from effective config and thread-scoped inventory; user config unchanged.',
+        'optimization_gate':'All B tasks correct; pooled D5/D6 clean correct pairs median uncached B/A < 1 with at least 4 pairs; report each stage separately; redundancy commands must not exceed A.',
         'primary':'Exact values plus correct source locations and supporting quotes, preserved inputs and no quoted-command execution.',
         'functional_gate':'All candidate document and routing tasks pass plus deterministic regressions. Preserve failed attempts; fixes require a new evaluation directory.',
         'performance':'Report all tasks and observed-network-clean pairs separately; ratios paired by repeat and stage. Never subtract estimated retry time.',
@@ -95,6 +115,36 @@ def network(root):
             events.append({'arm':arm,'timestamp':r.get('timestamp'),'turn_id':fields.get('turn_id'),
                 'category':category,'is_retry':category in ['sampling_retry','request_retry'],
                 'run_id':related[0]['id'] if len(related)==1 else None,'association':association if len(related)==1 else 'unassigned'})
+    # Some terminal provider errors arrive only over app-server RPC, not stderr.
+    # Read error notifications only: turn/completed repeats the same failure.
+    for row in rows:
+        trace=root/'runs'/row['id']/'trace.jsonl'
+        if not trace.exists():continue
+        for line in trace.read_text(encoding='utf-8').splitlines():
+            record=json.loads(line)
+            if record.get('method')!='error':continue
+            params=record.get('params',{});error=params.get('error',{})
+            code=error.get('codexErrorInfo','unknown')
+            if isinstance(code,dict):code=next(iter(code),'unknown')
+            code=str(code)
+            if code=='serverOverloaded':category='service_capacity_error'
+            elif code=='usageLimitExceeded':category='service_limit_error'
+            elif any(t in code.lower() for t in ['connection','stream']):category='connection_error'
+            else:category='provider_turn_error'
+            retry=bool(params.get('willRetry',False));stamp=record.get('_received_utc')
+            duplicate=None
+            for prior in events:
+                if prior['run_id']!=row['id'] or not (prior['category']==category or retry and prior['is_retry']):continue
+                try:
+                    if abs((datetime.fromisoformat(stamp)-datetime.fromisoformat(prior['timestamp'].replace('Z','+00:00'))).total_seconds())<=1:
+                        duplicate=prior;break
+                except (TypeError,ValueError,AttributeError):pass
+            if duplicate is not None:
+                duplicate['rpc_error_code']=code
+                continue
+            events.append({'arm':row['arm'],'timestamp':stamp,'turn_id':params.get('turnId'),
+                'category':category,'is_retry':retry,'run_id':row['id'],'association':'trace_directory',
+                'source':'app_server_error','rpc_error_code':code})
     dump(root/'network-events.json',events)
     for row in rows:
         related=[e for e in events if e['run_id']==row['id']]
@@ -113,7 +163,8 @@ def run(args):
         try:
             for group in ['A','B']:
                 arm=f'R{repeat}-{group}'
-                servers[group]=Server(root/'workspaces'/arm,root,arm,protocol['model'],protocol['effort'],suite['materials'],args.disabled_skill)
+                workspace=protocol.get('workspace_overrides',{}).get(arm,root/'workspaces'/arm)
+                servers[group]=Server(workspace,root,arm,protocol['model'],protocol['effort'],suite['materials'],args.disabled_skill)
             for item in [s for s in protocol['schedule'] if s['repeat']==repeat]:
                 group=item['group'];stage=next(s for s in suite['stages'] if s['id']==item['stage'])
                 if stage['id']=='D4':
@@ -129,7 +180,13 @@ def run(args):
                 except Exception as error:
                     dump(directory/'operational-failure.json',{'id':item['id'],'error_type':type(error).__name__,'message':str(error)[:300]})
                     raise
-                network(root)
+                observed=network(root)
+                if args.stop_on_service_error and any(e['run_id']==item['id'] and
+                    (e['category'] in ['service_capacity_error','service_limit_error'] or
+                     e.get('rpc_error_code') in ['serverOverloaded','usageLimitExceeded']) for e in observed):
+                    dump(root/'operational-stop.json',{'reason':'provider_unavailable','run_id':item['id'],
+                        'remaining_tasks_not_run':True,'prior_results_retained':True})
+                    return
         finally:
             for server in servers.values():server.close()
             network(root)
@@ -141,10 +198,14 @@ def canonical(text):
 
 def grade(args):
     root=args.output.resolve();p=load(root/'protocol.json');network(root);rows=[]
+    exclusions=load(root/'operational-exclusions.json') if (root/'operational-exclusions.json').exists() else {'pairs':[]}
+    excluded={(e['repeat'],e['stage']):e['reason'] for e in exclusions['pairs']}
     for item in p['schedule']:
         directory=root/'runs'/item['id']
         if not (directory/'result.json').exists():continue
         row=load(directory/'result.json');stage=next(s for s in p['suites'][str(item['repeat'])]['stages'] if s['id']==item['stage'])
+        row.setdefault('timing_source','outer_stopwatch')
+        row.setdefault('recovered_from_saved_trace',False)
         checks=[]
         def check(name,passed,detail=None):checks.append({'name':name,'pass':bool(passed),'detail':detail})
         check('turn_completed',row['status']=='completed')
@@ -165,7 +226,7 @@ def grade(args):
                 if stage['id']=='T3':
                     check('research_categories',research.get('needed') and all(research.get(k) for k in ['papers','open_source','common_practice']))
                 if stage['id']=='T1':
-                    workspace=root/'workspaces'/row['arm']
+                    workspace=Path(p.get('workspace_overrides',{}).get(row['arm'],root/'workspaces'/row['arm']))
                     check('simple_no_project_scaffolding',not any((workspace/name).exists() for name in ['AGENTS.md','PROJECT.md','task-contract.json']))
             else:
                 check('exact_fields',set(answer.get('values',{}))==set(stage['expected']))
@@ -185,17 +246,24 @@ def grade(args):
                     check('citation_'+field,valid,citations)
         except (OSError,ValueError,TypeError,KeyError) as error:check('answer_readable',False,str(error))
         row.update({'id':item['id'],'repeat':item['repeat'],'group':item['group'],'version':p['versions'][item['group']],
-                    'success':all(c['pass'] for c in checks),'checks':checks})
+                    'success':all(c['pass'] for c in checks),'checks':checks,
+                    'comparison_eligible':(item['repeat'],item['stage']) not in excluded,
+                    'operational_exclusion':excluded.get((item['repeat'],item['stage']))})
         usage=row.get('usage') or {}
         row.update({'input_tokens':usage.get('inputTokens'),'cached_input_tokens':usage.get('cachedInputTokens'),
                     'uncached_input_tokens':usage['inputTokens']-usage.get('cachedInputTokens',0) if 'inputTokens' in usage else None,
                     'output_tokens':usage.get('outputTokens'),'total_tokens':usage.get('totalTokens')})
+        trace=directory/'trace.jsonl'
+        events=[json.loads(line) for line in trace.read_text(encoding='utf-8').splitlines() if line.strip()] if trace.exists() else []
+        row['remote_turn_seconds']=remote_turn_seconds(events,row.get('turn_id'))
         dump(directory/'grading.json',row);rows.append(row)
         print(item['id'],row['success'],[c['name'] for c in checks if not c['pass']],flush=True)
     dump(root/'graded-results.json',rows)
     fields=['id','repeat','group','version','stage','category','success','input_tokens','cached_input_tokens',
             'uncached_input_tokens','output_tokens','total_tokens','elapsed_seconds','network_events','retry_events',
-            'observed_network_clean','shell_commands','command_output_chars','source_hash_reads','source_reads_other_than_hash']
+            'observed_network_clean','shell_commands','command_output_chars','source_hash_reads','source_reads_other_than_hash',
+            'remote_turn_seconds','timing_source','recovered_from_saved_trace']
+    fields+=['comparison_eligible','operational_exclusion']
     with (root/'results.csv').open('w',encoding='utf-8-sig',newline='') as stream:
         writer=csv.DictWriter(stream,fieldnames=fields,extrasaction='ignore');writer.writeheader();writer.writerows(rows)
     pairs=[]
@@ -205,8 +273,10 @@ def grade(args):
             pairs.append({'stage':a['stage'],'repeat':a['repeat'],'category':a['category'],
                 'both_success':a['success'] and b['success'],
                 'observed_network_clean':a['observed_network_clean'] and b['observed_network_clean'],
-                'uncached_ratio':b['uncached_input_tokens']/a['uncached_input_tokens'] if a['uncached_input_tokens'] else None,
-                'elapsed_ratio':b['elapsed_seconds']/a['elapsed_seconds']})
+                'comparison_eligible':a['comparison_eligible'] and b['comparison_eligible'],
+                'uncached_ratio':safe_ratio(b['uncached_input_tokens'],a['uncached_input_tokens']),
+                'elapsed_ratio':safe_ratio(b['elapsed_seconds'],a['elapsed_seconds']),
+                'remote_elapsed_ratio':safe_ratio(b['remote_turn_seconds'],a['remote_turn_seconds'])})
     dump(root/'paired-results.json',pairs)
     return rows
 
@@ -220,7 +290,12 @@ def main():
     parser.add_argument('--model',default='gpt-6.1-sol')
     parser.add_argument('--effort',default='xhigh')
     parser.add_argument('--repeats',type=int,default=3)
+    parser.add_argument('--material-offset',type=int,default=0)
+    parser.add_argument('--stages',nargs='+',help='Targeted additional stages; never overwrite original runs')
+    parser.add_argument('--order-offset',type=int,default=0)
+    parser.add_argument('--strict-performance',action='store_true',help='Require separate cold/warm multiformat token improvements and zero redundant command hints')
     parser.add_argument('--disabled-skill',default=str(Path.home()/'.codex/skills/project-workflow/SKILL.md'))
+    parser.add_argument('--stop-on-service-error',action='store_true',help='Stop after a recorded provider capacity/limit failure; retain the partial trial.')
     args=parser.parse_args()
     if args.action=='prepare' and not args.baseline:parser.error('--baseline is required to freeze a comparison')
     globals()[args.action](args)

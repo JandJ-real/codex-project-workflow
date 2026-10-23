@@ -1,0 +1,183 @@
+[
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-23T02:56:43.207813Z",
+    "category": "sampling_retry",
+    "is_retry": true,
+    "run_id": "T1-R1-A",
+    "association": "turn_id"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-23T02:56:48.465938Z",
+    "category": "transport_fallback_or_error",
+    "is_retry": false,
+    "run_id": "T1-R1-A",
+    "association": "time_window"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-23T02:56:48.466347Z",
+    "category": "sampling_retry",
+    "is_retry": true,
+    "run_id": "T1-R1-A",
+    "association": "turn_id",
+    "rpc_error_code": "responseStreamDisconnected"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-23T02:56:53.946623Z",
+    "category": "transport_fallback_or_error",
+    "is_retry": false,
+    "run_id": "T1-R1-A",
+    "association": "time_window"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-23T02:56:53.946878Z",
+    "category": "sampling_retry",
+    "is_retry": true,
+    "run_id": "T1-R1-A",
+    "association": "turn_id",
+    "rpc_error_code": "responseStreamDisconnected"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-23T02:56:59.757900Z",
+    "category": "transport_fallback_or_error",
+    "is_retry": false,
+    "run_id": "T1-R1-A",
+    "association": "time_window"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-23T02:56:59.758359Z",
+    "category": "sampling_retry",
+    "is_retry": true,
+    "run_id": "T1-R1-A",
+    "association": "turn_id",
+    "rpc_error_code": "responseStreamDisconnected"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-23T03:25:56.614115Z",
+    "category": "transport_fallback_or_error",
+    "is_retry": false,
+    "run_id": "T3-R1-B",
+    "association": "time_window"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-23T03:25:56.616014Z",
+    "category": "sampling_retry",
+    "is_retry": true,
+    "run_id": "T3-R1-B",
+    "association": "turn_id"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-23T03:26:01.865730Z",
+    "category": "transport_fallback_or_error",
+    "is_retry": false,
+    "run_id": "T3-R1-B",
+    "association": "time_window"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-23T03:26:01.866127Z",
+    "category": "sampling_retry",
+    "is_retry": true,
+    "run_id": "T3-R1-B",
+    "association": "turn_id",
+    "rpc_error_code": "responseStreamDisconnected"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-23T03:26:07.286343Z",
+    "category": "transport_fallback_or_error",
+    "is_retry": false,
+    "run_id": "T3-R1-B",
+    "association": "time_window"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-23T03:26:07.286560Z",
+    "category": "sampling_retry",
+    "is_retry": true,
+    "run_id": "T3-R1-B",
+    "association": "turn_id",
+    "rpc_error_code": "responseStreamDisconnected"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-23T03:26:13.075176Z",
+    "category": "transport_fallback_or_error",
+    "is_retry": false,
+    "run_id": "T3-R1-B",
+    "association": "time_window"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-23T03:26:13.075628Z",
+    "category": "sampling_retry",
+    "is_retry": true,
+    "run_id": "T3-R1-B",
+    "association": "turn_id",
+    "rpc_error_code": "responseStreamDisconnected"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-23T03:26:19.687737Z",
+    "category": "transport_fallback_or_error",
+    "is_retry": false,
+    "run_id": "T3-R1-B",
+    "association": "time_window"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-23T03:26:19.688095Z",
+    "category": "sampling_retry",
+    "is_retry": true,
+    "run_id": "T3-R1-B",
+    "association": "turn_id",
+    "rpc_error_code": "responseStreamDisconnected"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-23T03:26:28.158523Z",
+    "category": "transport_fallback_or_error",
+    "is_retry": false,
+    "run_id": "T3-R1-B",
+    "association": "time_window"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-23T03:26:56.060344+00:00",
+    "category": "connection_error",
+    "is_retry": true,
+    "run_id": "T3-R1-B",
+    "association": "trace_directory",
+    "source": "app_server_error",
+    "rpc_error_code": "responseStreamDisconnected"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-23T03:27:29.150412+00:00",
+    "category": "connection_error",
+    "is_retry": true,
+    "run_id": "T3-R1-B",
+    "association": "trace_directory",
+    "source": "app_server_error",
+    "rpc_error_code": "responseStreamDisconnected"
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-23T03:28:07.158842+00:00",
+    "category": "connection_error",
+    "is_retry": true,
+    "run_id": "T3-R1-B",
+    "association": "trace_directory",
+    "source": "app_server_error",
+    "rpc_error_code": "responseStreamDisconnected"
+  }
+]

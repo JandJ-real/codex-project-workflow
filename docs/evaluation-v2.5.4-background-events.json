@@ -1,0 +1,140 @@
+[
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-23T04:32:11.483018Z",
+    "category": "background_model_catalog_refresh",
+    "run_id": "D6-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-23T04:36:46.495158Z",
+    "category": "background_model_catalog_refresh",
+    "run_id": "D3-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-23T04:45:55.710731Z",
+    "category": "background_model_catalog_refresh",
+    "run_id": "T3-R1-A"
+  },
+  {
+    "arm": "R1-A",
+    "timestamp": "2026-10-23T04:50:30.721973Z",
+    "category": "background_model_catalog_refresh",
+    "run_id": null
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-23T04:32:11.436260Z",
+    "category": "background_model_catalog_refresh",
+    "run_id": null
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-23T04:36:46.448750Z",
+    "category": "background_model_catalog_refresh",
+    "run_id": null
+  },
+  {
+    "arm": "R1-B",
+    "timestamp": "2026-10-23T04:45:55.710200Z",
+    "category": "background_model_catalog_refresh",
+    "run_id": null
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-23T04:54:31.087680Z",
+    "category": "background_model_catalog_refresh",
+    "run_id": "D1-R2-A"
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-23T04:59:06.114918Z",
+    "category": "background_model_catalog_refresh",
+    "run_id": null
+  },
+  {
+    "arm": "R2-A",
+    "timestamp": "2026-10-23T05:03:41.128774Z",
+    "category": "background_model_catalog_refresh",
+    "run_id": null
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-23T04:54:31.522546Z",
+    "category": "background_model_catalog_refresh",
+    "run_id": null
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-23T04:59:06.547819Z",
+    "category": "background_model_catalog_refresh",
+    "run_id": "D3-R2-B"
+  },
+  {
+    "arm": "R2-B",
+    "timestamp": "2026-10-23T05:03:41.575725Z",
+    "category": "background_model_catalog_refresh",
+    "run_id": "D5-R2-B"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-23T05:07:27.000389Z",
+    "category": "background_model_catalog_refresh",
+    "run_id": null
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-23T05:12:02.021696Z",
+    "category": "background_model_catalog_refresh",
+    "run_id": "D4-R3-A"
+  },
+  {
+    "arm": "R3-A",
+    "timestamp": "2026-10-23T05:16:37.046844Z",
+    "category": "background_model_catalog_refresh",
+    "run_id": null
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-23T05:07:27.352013Z",
+    "category": "background_model_catalog_refresh",
+    "run_id": "D1-R3-B"
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-23T05:12:02.363350Z",
+    "category": "background_model_catalog_refresh",
+    "run_id": null
+  },
+  {
+    "arm": "R3-B",
+    "timestamp": "2026-10-23T05:16:37.388195Z",
+    "category": "background_model_catalog_refresh",
+    "run_id": "D6-R3-B"
+  },
+  {
+    "arm": "R4-A",
+    "timestamp": "2026-10-23T05:19:55.480468Z",
+    "category": "background_model_catalog_refresh",
+    "run_id": "D5-R4-A"
+  },
+  {
+    "arm": "R4-B",
+    "timestamp": "2026-10-23T05:19:55.790978Z",
+    "category": "background_model_catalog_refresh",
+    "run_id": null
+  },
+  {
+    "arm": "R5-A",
+    "timestamp": "2026-10-23T05:23:35.866646Z",
+    "category": "background_model_catalog_refresh",
+    "run_id": null
+  },
+  {
+    "arm": "R5-B",
+    "timestamp": "2026-10-23T05:23:36.146016Z",
+    "category": "background_model_catalog_refresh",
+    "run_id": "D5-R5-B"
+  }
+]

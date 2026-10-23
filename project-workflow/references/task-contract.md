@@ -4,6 +4,13 @@
 
 记录的是任务约定与来源，不是思维链：`goal`、`mode`、`workflow`、`constraints`、`acceptance`、`sources`、`assumptions`、`unknowns`、`research`。明确要求、可逆假设和未知项分开；只改用户变更的字段，保留其余有效约束。来源用真实路径或实际读取的链接。空数组表示没有可记录项，不能填造假的来源或预算。
 
-`mode` 区分执行、讨论、选方案和只写提示词；`workflow` 表示当前所需流程。提出或比较方案时，`research.needed=true`，记录相关论文、开源实现、常见做法和适配边界；某类来源确实不适用、检索无结果或不可访问时，留空并在 `limits` 说明实际情况。不用凑来源数量冒充完成调研。
+`mode`、`workflow` 必须使用下列原样字符串，不翻译枚举，不把流程说明填进字段。说明写入 `goal`、`constraints` 或 `acceptance`。按 schema 校验最终记录；用户明确要求的额外字段沿用其交付约定。
+
+| 字段 | 允许值 |
+| --- | --- |
+| `mode` | `execute`、`discuss`、`options`、`prompt_only` |
+| `workflow` | `direct`、`start`、`execute`、`resume`、`research_targeted`、`research_review`、`prompt_only`、`close`、`redirect` |
+
+明确的单步执行使用 `execute`／`direct`；只交付提示词使用 `prompt_only`／`prompt_only`。提出或比较方案时，`research.needed=true`，记录相关论文、开源实现、常见做法和适配边界；某类来源确实不适用、检索无结果或不可访问时，留空并在 `limits` 说明实际情况。不用凑来源数量冒充完成调研。
 
 记录后继续原本已授权的工作，不要求用户批准一份自动生成的 JSON。工具校验只能判断结构，约束保真与流程是否合适仍通过实际行为回归来验证。
